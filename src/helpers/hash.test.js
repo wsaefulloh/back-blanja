@@ -6,7 +6,7 @@ describe("helpers/hash", () => {
         expect(result).toEqual(expect.stringContaining("$"))
     })
 
-    test("shoulda throw error when params not provide", async() => {
+    test("should throw error when params not provide", async() => {
         try {
             const result = await hash()
             expect(result).toBe(false)
