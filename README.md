@@ -13,6 +13,7 @@
 
 ## Feature
 - CRUD
+- ORM Sequelize
 - MVC Models
 - Search and Filter
 - Authentication and Authorization
