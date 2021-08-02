@@ -13,11 +13,14 @@
 
 ## Feature
 - CRUD
+- ORM Sequelize
 - MVC Models
 - Search and Filter
 - Authentication and Authorization
 - Upload File (Image)
 - File Logging
+- Unit Testing
+- Integration Testing
 
 ## Installation Steps
 
@@ -39,7 +42,13 @@ npm install
 npm start
 ```
 
-4. You are all set!
+4. Run the test
+
+```bash
+npm test
+```
+
+5. You are all set!
 
 ```bash
 View the website at: http://localhost:9000
