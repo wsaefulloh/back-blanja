@@ -6,6 +6,9 @@ const main = require('./src/main')
 const morgan = require("morgan");
 const path = require("path")
 const fs = require("fs")
+const cors = require("cors")
+
+server.use(cors())
 
 server.use(morgan("dev"))
 let accessLogStream = fs.createWriteStream(path.join("./logs",'access.log'),{flags: 'a'})

@@ -87,6 +87,7 @@ products.addData = async (req, res) => {
             image_product : urlImage || req.file.path,
             store_name : object.store_name,
             id_category : object.id_category,
+            description : object.description,
             createdAt : dateString,
             updatedAt : dateString
         }
@@ -115,6 +116,7 @@ products.updateData = async (req, res) => {
             image_product : urlImage || req.file.path,
             store_name : object.store_name,
             id_category : object.id_category,
+            description : object.description,
             updatedAt : dateString
         }
         const result = await model.UpdateData(data)

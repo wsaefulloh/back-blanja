@@ -47,7 +47,11 @@ class Products{
             updatedAt:{
                 type: DataTypes.STRING,
                 allowNull: false,
-            }
+            },
+            description:{
+                type: DataTypes.STRING,
+                allowNull: false
+            },
         },{
             timestamps: false
         }
@@ -110,6 +114,7 @@ class Products{
                     store_product : data.store_product,
                     image_product : data.image_product,
                     id_category : data.category.id,
+                    description : data.description,
                     category : data.category.name_category,
                     createdAt : data.createdAt,
                     updatedAt : data.updatedAt
@@ -143,6 +148,7 @@ class Products{
                     store_product : data.store_product,
                     image_product : data.image_product,
                     id_category : data.category.id,
+                    description : data.description,
                     category : data.category.name_category,
                     createdAt : data.createdAt,
                     updatedAt : data.updatedAt
@@ -176,6 +182,7 @@ class Products{
                     store_product : data.store_product,
                     image_product : data.image_product,
                     id_category : data.category.id,
+                    description : data.description,
                     category : data.category.name_category,
                     createdAt : data.createdAt,
                     updatedAt : data.updatedAt
@@ -209,6 +216,7 @@ class Products{
                     store_product : data.store_product,
                     image_product : data.image_product,
                     id_category : data.category.id,
+                    description : data.description,
                     category : data.category.name_category,
                     createdAt : data.createdAt,
                     updatedAt : data.updatedAt
@@ -247,6 +255,7 @@ class Products{
                     store_product : data.store_product,
                     image_product : data.image_product,
                     id_category : data.category.id,
+                    description : data.description,
                     category : data.category.name_category,
                     createdAt : data.createdAt,
                     updatedAt : data.updatedAt
@@ -284,6 +293,7 @@ class Products{
                     store_product : data.store_product,
                     image_product : data.image_product,
                     id_category : data.category.id,
+                    description : data.description,
                     category : data.category.name_category,
                     createdAt : data.createdAt,
                     updatedAt : data.updatedAt
@@ -321,7 +331,8 @@ class Products{
                 store_name : data.store_name,
                 image_product: data.image_product,
                 id_category : data.id_category,
-                updatedAt : data.updatedAt
+                updatedAt : data.updatedAt,
+                description : data.description,
             },{
                 where : {
                     id : data.id

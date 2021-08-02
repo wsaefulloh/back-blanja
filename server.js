@@ -11,6 +11,7 @@ async function init() {
         await db.connect()
         const msg = await redis.check()
         await database.sync({alter : true}) 
+        
         server.listen(PORT, () => {
             console.log(`Conection to Database Success`)
             console.log(msg)
