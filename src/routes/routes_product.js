@@ -35,6 +35,7 @@ if (process.env.NODE_ENV == "test") {
     routing.get("/sort/price/desc",ctrl.sortbyPriceDESC);
     routing.get("/sort/category/:name_category",ctrl.sortbyCategory)
     routing.get("/search",ctrl.searchbyName)
+    routing.get("/detail/:id_product",ctrl.getByID)
 
     //UPDATE --> PUT
     routing.put("/update", upload.single("image"), ctrl.updateData)

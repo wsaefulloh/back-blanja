@@ -70,7 +70,8 @@ class Products{
                     model: category.table,
                     as: 'category'
                 }]
-            }).then(res => {
+            })
+            .then(res => {
                 const productJSON = res
                 const dataProduct = productJSON.map((data) => {
                 const object = {
@@ -78,9 +79,10 @@ class Products{
                     name_product : data.name_product,
                     price_product : data.price_product,
                     brand_product : data.brand_product,
-                    store_product : data.store_product,
+                    store_product : data.store_name,
                     image_product : data.image_product,
                     id_category : data.category.id,
+                    description : data.description,
                     category : data.category.name_category,
                     createdAt : data.createdAt,
                     updatedAt : data.updatedAt
@@ -111,7 +113,7 @@ class Products{
                     name_product : data.name_product,
                     price_product : data.price_product,
                     brand_product : data.brand_product,
-                    store_product : data.store_product,
+                    store_product : data.store_name,
                     image_product : data.image_product,
                     id_category : data.category.id,
                     description : data.description,
@@ -145,7 +147,7 @@ class Products{
                     name_product : data.name_product,
                     price_product : data.price_product,
                     brand_product : data.brand_product,
-                    store_product : data.store_product,
+                    store_product : data.store_name,
                     image_product : data.image_product,
                     id_category : data.category.id,
                     description : data.description,
@@ -179,7 +181,7 @@ class Products{
                     name_product : data.name_product,
                     price_product : data.price_product,
                     brand_product : data.brand_product,
-                    store_product : data.store_product,
+                    store_product : data.store_name,
                     image_product : data.image_product,
                     id_category : data.category.id,
                     description : data.description,
@@ -213,7 +215,7 @@ class Products{
                     name_product : data.name_product,
                     price_product : data.price_product,
                     brand_product : data.brand_product,
-                    store_product : data.store_product,
+                    store_product : data.store_name,
                     image_product : data.image_product,
                     id_category : data.category.id,
                     description : data.description,
@@ -252,7 +254,7 @@ class Products{
                     name_product : data.name_product,
                     price_product : data.price_product,
                     brand_product : data.brand_product,
-                    store_product : data.store_product,
+                    store_product : data.store_name,
                     image_product : data.image_product,
                     id_category : data.category.id,
                     description : data.description,
@@ -290,7 +292,7 @@ class Products{
                     name_product : data.name_product,
                     price_product : data.price_product,
                     brand_product : data.brand_product,
-                    store_product : data.store_product,
+                    store_product : data.store_name,
                     image_product : data.image_product,
                     id_category : data.category.id,
                     description : data.description,
@@ -351,6 +353,42 @@ class Products{
             this.table.create(data)
             .then(res => {
                 resolve('Add product success')
+            }).catch(err => {
+                reject(err.message)
+            })
+        })
+    }
+
+    GetbyID(id_prod) {
+        return new Promise((resolve,reject) => {
+            this.table.findAll({
+                where: {
+                    id : id_prod
+                },
+                include: [{
+                    model: category.table,
+                    as: 'category'
+                }]
+            })
+            .then(res => {
+                const productJSON = res
+                const dataProduct = productJSON.map((data) => {
+                const object = {
+                    id_product : data.id,
+                    name_product : data.name_product,
+                    price_product : data.price_product,
+                    brand_product : data.brand_product,
+                    store_product : data.store_name,
+                    image_product : data.image_product,
+                    id_category : data.category.id,
+                    description : data.description,
+                    category : data.category.name_category,
+                    createdAt : data.createdAt,
+                    updatedAt : data.updatedAt
+                }
+                return object;
+            })
+                resolve(dataProduct)
             }).catch(err => {
                 reject(err.message)
             })

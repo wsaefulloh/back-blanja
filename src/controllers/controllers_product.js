@@ -137,4 +137,14 @@ products.removeData = async (req, res) => {
     }
 }
 
+products.getByID = async (req, res) => {
+    try {
+        const result = await model.GetbyID(req.params.id_product)
+        return respone(res, 200, result)
+    } catch (error) {
+        console.log(error)
+        return respone(res, 500, error)
+    }
+}
+
 module.exports = products
