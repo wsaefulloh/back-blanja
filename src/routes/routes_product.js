@@ -43,6 +43,7 @@ if (process.env.NODE_ENV == "test") {
 
     //DELETE --> DELETE
     routing.delete("/del/:id_product", ctrl.removeData);
+    routing.delete("/del/home/p/:id_product",ctrl.removeData)
     
     // //CREATE --> POST
     // routing.post("/add",validate(['admin']), upload.single("image"), ctrl.addData);
