@@ -29,7 +29,7 @@ users.addData = async (req, res) => {
             role : req.body.role
         }
         const result = await model.AddData(data)
-        return respone(res, 200, result)
+        return respone(res, 201, result)
         }
         
     } catch (error) {

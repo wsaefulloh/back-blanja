@@ -116,11 +116,11 @@ class User{
         })
     }
 
-    DeleteData(id_del){
+    DeleteData(username){
         return new Promise((resolve, reject) => {
             this.table.destroy({
                 where: {
-                    id : id_del
+                    username : username
                 }
             }).catch((err) => {
                 reject(err.message)

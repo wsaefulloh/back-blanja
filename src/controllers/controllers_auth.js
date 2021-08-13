@@ -37,7 +37,7 @@ auth.login = async (req,res) => {
         }
         
     } catch (error) {
-        return respone(res, 500, error)
+        return respone(res, 500, 'masukkan username dan password dengan benar')
     }
 }
 
