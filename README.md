@@ -1,10 +1,5 @@
 <h1 align="center">Blanja RESTful API with Express</h1>
-<p align="center"><img src="https://miro.medium.com/max/1400/0*RDbjFZxjwF_JQWz-.jpg" width="400px" alt="NodeJS.jpg" /></p>
-<p align="center">
-    <a href="https://en.wikipedia.org/wiki/Express.js" target="blank">More about Express</a>
-</p>
 
-## Description about project
 Blanja RESTfull API is a RESTfull API that will provide the data needed by the [Front End](https://github.com/wsaefulloh/front-blanja) of the Blanja website. The API is designed in a minimalist and flexible way with the use of Express.Js. [More about Express](https://en.wikipedia.org/wiki/Express.js). Blanja is an E-Commerce application that makes it easy for us to make online buying and selling transactions anywhere and anytime. Built with React Js on the front end, Node Js and Express Js on the back end. This application has two roles, namely seller and customer. As a seller in this application you can add, delete and update the items you want to sell. As a customer in this application you can add the items you want to buy into the bag to find out the details of the total payment.
 
 ## Built With
