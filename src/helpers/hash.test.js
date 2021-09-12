@@ -3,6 +3,7 @@ const hash = require("./hash")
 describe("helpers/hash", () => {
     test("should return random char", async () => {
         const result = await hash("abcd1234")
+        console.log(result)
         expect(result).toEqual(expect.stringContaining("$"))
     })
 
