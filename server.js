@@ -1,6 +1,17 @@
-require("dotenv/config")
+const dotenv = require("dotenv")
 const server = require("./app");
 const PORT = 9000;
+
+if (process.env.NODE_ENV === "dev") {
+    dotenv.config({ path: __dirname + "/.env.development" })
+}
+if (process.env.NODE_ENV === "prod") {
+    dotenv.config({ path: __dirname + "/.env.production" })
+}
+if (process.env.NODE_ENV === "test") {
+    dotenv.config({ path: __dirname + "/.env" })
+}
+
 const {orm : database} = require('./src/configs/db');
 const {pool : db} = require('./src/configs/db')
 const redis = require("./src/configs/redis")
