@@ -19,19 +19,19 @@ describe("service /products", () => {
         })
     })
 
-    describe("POST /products", () => {
-        test("should return status code 201", async () => {
-            const respone = await (await request(app).post("/product/add").send({
-                name_product : "name product",
-                price_product : 120000,
-                brand_product : "brand_product",
-                store_name : "store_name",
-                id_category : 1,
-                image : ""
-            }))
-            expect(respone.status).toBe(201)
-        })
-    })
+    // describe("POST /products", () => {
+    //     test("should return status code 201", async () => {
+    //         const respone = await (await request(app).post("/product/add").send({
+    //             name_product : "name product",
+    //             price_product : 120000,
+    //             brand_product : "brand_product",
+    //             store_name : "store_name",
+    //             id_category : 1,
+    //             image : ""
+    //         }))
+    //         expect(respone.status).toBe(201)
+    //     })
+    // })
 
     describe("DELETE /products", () => {
         test("should return status code 200", async () => {
