@@ -49,9 +49,30 @@ pipeline {
 
         stage('Deployment') {
             steps {
-                sh "docker-compose up -d"
+                script {
+                    sshPublisher(
+                        publisher: [
+                            sshPublisherDesc(
+                                configName: 'prod',
+                                verbose: false,
+                                transfer: [
+                                    sshTransfer(
+                                        execCommand: "cd /home/ubuntu/prod/; sudo docker-compose up -d",
+                                        execTimeout: 120000,
+                                    )
+                                ]
+                            )
+                        ]
+                    )
+                }
             }
         }
+
+        // stage('Deployment') {
+        //     steps {
+        //         sh "docker-compose up -d"
+        //     }
+        // }
 
     }
 }
