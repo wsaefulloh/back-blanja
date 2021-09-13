@@ -3,9 +3,9 @@ const dotenv = require("dotenv")
 const server = require("./app");
 const PORT = 9000;
 
-if (process.env.NODE_ENV === "dev") {
-    dotenv.config({ path: './.env.development' })
-}
+// if (process.env.NODE_ENV === "dev") {
+//     dotenv.config({ path: './.env.development' })
+// }
 if (process.env.NODE_ENV === "prod") {
     dotenv.config({ path: './.env.production' })
 }
