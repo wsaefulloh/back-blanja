@@ -1,15 +1,16 @@
+require('custom-env').env();
 const dotenv = require("dotenv")
 const server = require("./app");
 const PORT = 9000;
 
 if (process.env.NODE_ENV === "dev") {
-    dotenv.config({ path: __dirname + "/.env.development" })
+    dotenv.config({ path: './.env.development' })
 }
 if (process.env.NODE_ENV === "prod") {
-    dotenv.config({ path: __dirname + "/.env.production" })
+    dotenv.config({ path: './.env.production' })
 }
 if (process.env.NODE_ENV === "test") {
-    dotenv.config({ path: __dirname + "/.env" })
+    dotenv.config({ path: './.env.test' })
 }
 
 const {orm : database} = require('./src/configs/db');
