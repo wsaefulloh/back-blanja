@@ -7,7 +7,7 @@ const PORT = 9000;
 //     dotenv.config({ path: './.env.development' })
 // }
 if (process.env.NODE_ENV === "prod") {
-    dotenv.config({ path: './.env.production' })
+    dotenv.config({ path: './.env.development' })
 }
 if (process.env.NODE_ENV === "test") {
     dotenv.config({ path: './.env' })
