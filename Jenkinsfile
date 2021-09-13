@@ -51,13 +51,13 @@ pipeline {
             steps {
                 script {
                     sshPublisher(
-                        publisher: [
+                        publishers: [
                             sshPublisherDesc(
                                 configName: 'prod',
                                 verbose: false,
-                                transfer: [
+                                transfers: [
                                     sshTransfer(
-                                        execCommand: "cd /home/ubuntu/prod/; sudo docker-compose up -d",
+                                        execCommand: "cd /home/ubuntu/prod/; sudo docker-compose up -d,
                                         execTimeout: 120000,
                                     )
                                 ]
