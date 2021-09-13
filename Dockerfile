@@ -8,6 +8,8 @@ RUN yarn install
 
 COPY . .
 
+RUN yarn add -g nodemon
+
 EXPOSE 9000
 
 CMD [ "npm" , "start" ]
