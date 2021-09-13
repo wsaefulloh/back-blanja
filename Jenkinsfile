@@ -39,5 +39,13 @@ pipeline {
             }
         }
 
+        stage('Push Image') {
+            steps {
+                script{
+                    builderImage.push()
+                }
+            }
+        }
+
     }
 }
