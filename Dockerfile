@@ -8,7 +8,7 @@ RUN yarn install
 
 COPY . .
 
-RUN yarn add -g nodemon
+RUN yarn add nodemon
 
 EXPOSE 9000
 
