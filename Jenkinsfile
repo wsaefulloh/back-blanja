@@ -57,7 +57,7 @@ pipeline {
                                 verbose: false,
                                 transfers: [
                                     sshTransfer(
-                                        execCommand: "cd /home/ubuntu/prod/; sudo docker-compose up -d",
+                                        execCommand: "cd /home/ubuntu/prod/; docker-compose up -d",
                                         execTimeout: 120000,
                                     )
                                 ]
