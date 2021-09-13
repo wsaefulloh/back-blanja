@@ -10,7 +10,7 @@ if (process.env.NODE_ENV === "prod") {
     dotenv.config({ path: './.env.production' })
 }
 if (process.env.NODE_ENV === "test") {
-    dotenv.config({ path: './.env.test' })
+    dotenv.config({ path: './.env' })
 }
 
 const {orm : database} = require('./src/configs/db');
