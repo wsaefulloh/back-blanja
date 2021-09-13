@@ -7,11 +7,11 @@ const PORT = 9000;
 //     dotenv.config({ path: './.env.development' })
 // }
 if (process.env.NODE_ENV === "prod") {
-    dotenv.config({ path: './.env.development' })
-}
-if (process.env.NODE_ENV === "test") {
     dotenv.config({ path: './.env' })
 }
+// if (process.env.NODE_ENV === "test") {
+//     dotenv.config({ path: './.env' })
+// }
 
 const {orm : database} = require('./src/configs/db');
 const {pool : db} = require('./src/configs/db')
