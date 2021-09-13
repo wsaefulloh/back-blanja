@@ -2,9 +2,9 @@ const redis = require("redis")
 class Redis {
     constructor() {
         this.redisDb = redis.createClient({
-            host: process.env.REDIS_HOST,
+            host: (process.env.NODE_ENV == "test") ? process.env.REDIS_HOST_TEST : (process.env.NODE_ENV == "dev") ? process.env.REDIS_HOST_DEV : process.env.REDIS_HOST_PROD,
             port: 6379,
-            password: process.env.REDIS_PASS,
+            password: (process.env.NODE_ENV == "test") ? process.env.REDIS_PASS_TEST : (process.env.NODE_ENV == "dev") ? process.env.REDIS_PASS_DEV : process.env.REDIS_PASS_PROD,
         })
     }
 
