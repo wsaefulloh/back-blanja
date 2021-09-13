@@ -1,4 +1,5 @@
-def namaVariabel = "asasasasa"
+def builderImage
+def imageName = "wsaefulloh/coba_backend:devs"
 
 pipeline {
     agent any
@@ -19,5 +20,24 @@ pipeline {
                 }
             }
         }
+
+        stage('Build Image') {
+            steps {
+                script{
+                    builderImage = docker.build("${imageName}")
+                }
+            }
+        }
+
+        stage('Test Image') {
+            steps {
+                script{
+                    builderImage.inside {
+                        sh "echo 'pass'"
+                    }
+                }
+            }
+        }
+
     }
 }
