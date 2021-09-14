@@ -73,8 +73,8 @@ Blanja RESTfull API is a RESTfull API that will provide the data needed by the [
    ```
 
 
-## Backend Repository
-Backend API : Blanja - Frontend [here](https://github.com/wsaefulloh/front-blanja)
+## Frontend Repository
+Frontend API : Blanja - Frontend [here](https://github.com/wsaefulloh/front-blanja)
 
 
 ## End Point
