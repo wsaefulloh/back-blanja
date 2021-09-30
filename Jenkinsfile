@@ -1,5 +1,5 @@
 def builderImage
-def imageName = "wsaefulloh/coba_backend:devs"
+def imageName = "wsaefulloh/blanja_backend"
 
 pipeline {
     agent any
@@ -47,25 +47,25 @@ pipeline {
             }
         }
 
-        stage('Deployment') {
-            steps {
-                script {
-                    sshPublisher(
-                        publishers: [
-                            sshPublisherDesc(
-                                configName: 'prod',
-                                verbose: false,
-                                transfers: [
-                                    sshTransfer(
-                                        execCommand: "cd /home/ubuntu/prod/back; docker-compose up -d",
-                                        execTimeout: 120000,
-                                    )
-                                ]
-                            )
-                        ]
-                    )
-                }
-            }
+        // stage('Deployment') {
+        //     steps {
+        //         script {
+        //             sshPublisher(
+        //                 publishers: [
+        //                     sshPublisherDesc(
+        //                         configName: 'prod',
+        //                         verbose: false,
+        //                         transfers: [
+        //                             sshTransfer(
+        //                                 execCommand: "cd /home/ubuntu/prod/back; docker-compose up -d",
+        //                                 execTimeout: 120000,
+        //                             )
+        //                         ]
+        //                     )
+        //                 ]
+        //             )
+        //         }
+        //     }
         }
 
         // stage('Deployment') {
