@@ -1,6 +1,6 @@
 <h1 align="center">Blanja RESTful API with Express</h1>
 <p align="center">
-    <a href="https://adoring-bhabha-c2258e.netlify.app/" target="blank">View Demo</a>
+    <a href="https://blanja-site.netlify.app//" target="blank">View Demo</a>
   · <a href="https://github.com/wsaefulloh/back-blanja/issues">Report Bug</a>
   · <a href="https://github.com/wsaefulloh/back-blanja/pulls">Request Feature</a>
 </p>
