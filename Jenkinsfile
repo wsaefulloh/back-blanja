@@ -13,13 +13,13 @@ pipeline {
             }
         }
 
-        stage('Running Test') {
-            steps {
-                nodejs("node14"){
-                    sh 'npm run test'
-                }
-            }
-        }
+        // stage('Running Test') {
+        //     steps {
+        //         nodejs("node14"){
+        //             sh 'npm run test'
+        //         }
+        //     }
+        // }
 
         stage('Build Image') {
             steps {
