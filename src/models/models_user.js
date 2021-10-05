@@ -23,6 +23,14 @@ class User{
                 type: DataTypes.STRING,
                 allowNull: false
             },
+            email:{
+                type: DataTypes.STRING,
+                allowNull: true
+            },
+            alamat:{
+                type: DataTypes.STRING,
+                allowNull: true
+            },
             role:{
                 type: DataTypes.STRING,
                 allowNull: false,
@@ -46,7 +54,9 @@ class User{
                     name_user : data.name,
                     username : data.username,
                     password : data.password,
-                    role : data.role
+                    role : data.role,
+                    email : data.email,
+                    alamat : data.alamat,
                 }
                 return object;
             })
@@ -74,12 +84,44 @@ class User{
                     name_user : data.name,
                     username : data.username,
                     password : data.password,
-                    role : data.role
+                    role : data.role,
+                    email : data.email,
+                    alamat : data.alamat,
                 }
                 return object;
             })
                 resolve(dataProduct)
             }).catch((err) => {
+                console.log(err)
+                reject(err.message)
+            });
+        })
+    }
+
+    GetbyUsername1(username) {
+        return new Promise((resolve, reject) => {
+            this.table.findAll({
+                where : {
+                    username:{
+                        [Op.iLike] : `${username}`
+                    }
+                },
+            })
+            .then((res) => {
+                const productJSON = res
+                const dataProduct = productJSON.map((data) => {
+                const object = {
+                    name_user : data.name,
+                    username : data.username,
+                    role : data.role,
+                    email : data.email,
+                    alamat : data.alamat,
+                }
+                return object;
+            })
+                resolve(dataProduct)
+            }).catch((err) => {
+                console.log(err)
                 reject(err.message)
             });
         })
@@ -101,7 +143,9 @@ class User{
             this.table.update({
                 name : data.name,
                 password : data.password,
-                role: data.role
+                role: data.role,
+                email : data.email,
+                alamat : data.alamat,
             },{
                 where : {
                     username : data.username

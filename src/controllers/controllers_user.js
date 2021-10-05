@@ -14,6 +14,15 @@ users.getAll = async (req, res) => {
     }
 }
 
+users.getUsername = async (req, res) => {
+    try {
+        const result = await model.GetbyUsername1(req.params.username)
+        return respone(res, 200, result)
+    } catch (error) {
+        return respone(res, 500, error)
+    }
+}
+
 users.addData = async (req, res) => {
     try {
         const available = await model.GetbyUsername(req.body.username)
@@ -51,7 +60,9 @@ users.updateData = async (req, res) => {
                     name : req.body.name_users,
                     password : passHash,
                     role : req.body.role,
-                    username : username
+                    username : username,
+                    email : data.email,
+                    alamat : data.alamat,
                 }
                 const result = await model.UpdateData(data)
                 return respone(res, 201, result)
