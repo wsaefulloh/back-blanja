@@ -10,7 +10,8 @@ const token = async (username,role) => {
             user:username,
             role:role
         }
-        const token = jwt.sign(payload, process.env.JWT_KEYS, {expiresIn: '1h'})
+        const token = jwt.sign(payload, process.env.JWT_KEYS)
+        // const token = jwt.sign(payload, process.env.JWT_KEYS, {expiresIn: '2h'})
         const result = {
             token : token,
             message : 'token created, login success'

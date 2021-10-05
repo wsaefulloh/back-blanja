@@ -51,6 +51,7 @@ users.updateData = async (req, res) => {
         const {token_auth} = req.headers
         return jwt.verify(token_auth, process.env.JWT_KEYS, async (err, decode) => {
             const username = decode.user
+            const role = decode.role
             const oldData = await model.GetbyUsername(username)
             const passUser = req.body.old_password
             const check = await bcr.compare(passUser,oldData[0].password)
@@ -59,11 +60,12 @@ users.updateData = async (req, res) => {
                 const data = {
                     name : req.body.name_users,
                     password : passHash,
-                    role : req.body.role,
+                    role : role,
                     username : username,
-                    email : data.email,
-                    alamat : data.alamat,
+                    email : req.body.email,
+                    alamat : req.body.alamat,
                 }
+                console.log(data)
                 const result = await model.UpdateData(data)
                 return respone(res, 201, result)
             } else{

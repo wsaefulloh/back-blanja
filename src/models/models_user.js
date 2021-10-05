@@ -138,7 +138,7 @@ class User{
         })
     }
 
-    UpdateDate(data) {
+    UpdateData(data) {
         return new Promise((resolve, reject) => {
             this.table.update({
                 name : data.name,
