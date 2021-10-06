@@ -82,6 +82,7 @@ products.addData = async (req, res) => {
         const dateString = moment(new Date()).format("YYYY-MM-DD HH:mm:ss")
         const data = {
             name_product : object.name_product,
+            username : object.username,
             price_product : object.price_product,
             brand_product : object.brand_product, 
             image_product : urlImage || req.file.path,
@@ -140,6 +141,16 @@ products.removeData = async (req, res) => {
 products.getByID = async (req, res) => {
     try {
         const result = await model.GetbyID(req.params.id_product)
+        return respone(res, 200, result)
+    } catch (error) {
+        console.log(error)
+        return respone(res, 500, error)
+    }
+}
+
+products.getByUsername = async (req, res) => {
+    try {
+        const result = await model.GetbyUsernameProd(req.params.username)
         return respone(res, 200, result)
     } catch (error) {
         console.log(error)

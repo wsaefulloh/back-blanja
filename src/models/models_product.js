@@ -40,6 +40,10 @@ class Products{
                     key:"id",
                 }
             },
+            username:{
+                type: DataTypes.STRING,
+                allowNull: true
+            },
             createdAt:{
                 type: DataTypes.STRING,
                 allowNull: false,
@@ -168,7 +172,10 @@ class Products{
     SortbyPriceASC() {
         return new Promise((resolve,reject) => {
             this.table.findAll({
-                order: [["price_product","ASC"]],
+                // order: [["price_product","ASC"]],
+                order: [
+                    [ Sequelize.cast(Sequelize.col('price_product'), 'BIGINT') , 'ASC' ]
+                ],
                 include: [{
                     model: category.table,
                     as: 'category'
@@ -191,7 +198,7 @@ class Products{
                 }
                 return object;
             })
-                resolve(dataProduct)
+            resolve(dataProduct)
             }).catch(err => {
                 console.log(err)
                 reject(err.message)
@@ -202,7 +209,9 @@ class Products{
     SortbyPriceDESC() {
         return new Promise((resolve,reject) => {
             this.table.findAll({
-                order: [["price_product","DESC"]],
+                order: [
+                    [ Sequelize.cast(Sequelize.col('price_product'), 'BIGINT') , 'DESC' ]
+                ],
                 include: [{
                     model: category.table,
                     as: 'category'
@@ -364,6 +373,42 @@ class Products{
             this.table.findAll({
                 where: {
                     id : id_prod
+                },
+                include: [{
+                    model: category.table,
+                    as: 'category'
+                }]
+            })
+            .then(res => {
+                const productJSON = res
+                const dataProduct = productJSON.map((data) => {
+                const object = {
+                    id_product : data.id,
+                    name_product : data.name_product,
+                    price_product : data.price_product,
+                    brand_product : data.brand_product,
+                    store_product : data.store_name,
+                    image_product : data.image_product,
+                    id_category : data.category.id,
+                    description : data.description,
+                    category : data.category.name_category,
+                    createdAt : data.createdAt,
+                    updatedAt : data.updatedAt
+                }
+                return object;
+            })
+                resolve(dataProduct)
+            }).catch(err => {
+                reject(err.message)
+            })
+        })
+    }
+
+    GetbyUsernameProd(username) {
+        return new Promise((resolve,reject) => {
+            this.table.findAll({
+                where: {
+                    username : username
                 },
                 include: [{
                     model: category.table,

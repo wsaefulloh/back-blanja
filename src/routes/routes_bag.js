@@ -21,6 +21,7 @@ if (process.env.NODE_ENV == "test") {
 
     //READ --> GET
     routing.get("/all",ctrl.getAll);
+    routing.get("/username/:username",ctrl.getByUsername);
 
     //UPDATE --> PUT
     routing.put("/update",ctrl.updateData)

@@ -12,6 +12,10 @@ class Bag{
                 autoIncrement: true,
                 primaryKey: true
             },
+            username:{
+                type: DataTypes.STRING,
+                allowNull: true
+            },
             id_product:{
                 type: DataTypes.INTEGER,
                 allowNull: false,
@@ -101,6 +105,41 @@ class Bag{
             .then(res => {
                 resolve('Delete product in bag success')
             }).catch(err => {
+                reject(err)
+            })
+        })
+    }
+
+    GetbyUsernameBag(username) {
+        return new Promise((resolve,reject) => {
+            this.table.findAll({
+                order: [["id","DESC"]],
+                include: [{
+                    model: product.table,
+                    as: 'detail_product'
+                }],
+                where: {
+                    username : username
+                },
+            }).then(res => {
+                const productJSON = res
+                const dataProduct = productJSON.map((data) => {
+                const total_Price = data.count * data.detail_product.price_product
+                const object = {
+                    id_bag : data.id,
+                    id_product : data.id_product,
+                    name_product : data.detail_product.name_product,
+                    brand_product : data.detail_product.brand_product,
+                    store_product : data.detail_product.store_product,
+                    image_product : data.detail_product.image_product,
+                    count : data.count,
+                    totalPrice : total_Price
+                }
+                return object;
+            })
+                resolve(dataProduct)
+            }).catch(err => {
+                console.log(err)
                 reject(err)
             })
         })

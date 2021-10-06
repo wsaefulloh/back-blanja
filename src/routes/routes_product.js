@@ -37,6 +37,7 @@ if (process.env.NODE_ENV == "test") {
     routing.get("/search",ctrl.searchbyName)
     routing.get("/p/:id_product",ctrl.getByID)
     routing.get("/home/p/:id_product",ctrl.getByID)
+    routing.get("/username/:username",ctrl.getByUsername)
 
     //UPDATE --> PUT
     routing.put("/update", upload.single("image"), ctrl.updateData)
