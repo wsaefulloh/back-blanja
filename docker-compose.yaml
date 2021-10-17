@@ -4,6 +4,9 @@ services:
     image: wsaefulloh/coba_backend:devs
     ports:
       - 9000:9000
+    environment:
+      -NEW_RELIC_LICENSE_KEY=b9ed493e955751a538543488c551f5cff689NRAL
+      -NEW_RELIC_APP_NAME=Service_Backend
 
 networks:
   default:

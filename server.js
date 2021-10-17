@@ -1,3 +1,4 @@
+require("newrelic")
 require("dotenv/config")
 const server = require("./app");
 const PORT = 9000;
