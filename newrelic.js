@@ -9,7 +9,7 @@ exports.config = {
   /**
    * Array of application names.
    */
-  app_name: ['Service_Backend'],
+  app_name: ['Service_Backend_Docker_Small'],
   /**
    * Your New Relic license key.
    */
