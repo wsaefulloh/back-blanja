@@ -1,0 +1,82 @@
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":25260,"time":"2021-10-24T20:17:17.179Z","msg":"Using New Relic for Node.js. Agent version: 8.4.0; Node version: v14.18.1."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":25260,"time":"2021-10-24T20:17:18.068Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":25260,"time":"2021-10-24T20:17:18.255Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":25260,"time":"2021-10-24T20:17:18.255Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":25260,"time":"2021-10-24T20:17:29.450Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":25260,"time":"2021-10-24T20:17:29.450Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID BbXO6Air2hXBADJ_HlfQvmZhdb-0AAgBAAAnIQEAAGKsAgRXX4YkAwAFOC40LjAACUxha2Vqb3JnZQAcU2VydmljZV9CYWNrZW5kX0RvY2tlcl9TbWFsbA.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":25260,"time":"2021-10-24T20:17:29.451Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/3309342/applications/1465878052","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":25260,"time":"2021-10-24T20:17:29.463Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"analytic_event_data\":833,\"custom_event_data\":83}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":25260,"time":"2021-10-24T20:17:29.471Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":25260,"time":"2021-10-24T20:17:30.471Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":25491,"time":"2021-10-24T20:18:13.926Z","msg":"Using New Relic for Node.js. Agent version: 8.4.0; Node version: v14.18.1."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":25491,"time":"2021-10-24T20:18:14.241Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":25491,"time":"2021-10-24T20:18:14.254Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":25491,"time":"2021-10-24T20:18:14.254Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":25491,"time":"2021-10-24T20:18:17.889Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":25491,"time":"2021-10-24T20:18:17.891Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID BbjbL5qQjONnADJ_HlfQvmZhdb_wAAgBAAAnIQEAAGOTAgRXX4YkAwAFOC40LjAACUxha2Vqb3JnZQAcU2VydmljZV9CYWNrZW5kX0RvY2tlcl9TbWFsbA.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":25491,"time":"2021-10-24T20:18:17.892Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/3309342/applications/1465878052","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":25491,"time":"2021-10-24T20:18:17.894Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"analytic_event_data\":833,\"custom_event_data\":83}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":25491,"time":"2021-10-24T20:18:17.901Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":25491,"time":"2021-10-24T20:18:18.902Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":42948,"time":"2021-10-25T03:23:08.764Z","msg":"Using New Relic for Node.js. Agent version: 8.5.0; Node version: v14.18.1."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":42948,"time":"2021-10-25T03:23:09.461Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":42948,"time":"2021-10-25T03:23:09.496Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":42948,"time":"2021-10-25T03:23:09.496Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":42948,"time":"2021-10-25T03:23:19.919Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":42948,"time":"2021-10-25T03:23:19.920Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID BeY-ASXswh85ADJ_HlfQvmZhdiOMAAgBAAAnIQEAAKfEAgRXX4YkAwAFOC41LjAACUxha2Vqb3JnZQAcU2VydmljZV9CYWNrZW5kX0RvY2tlcl9TbWFsbA.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":42948,"time":"2021-10-25T03:23:19.921Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/3309342/applications/1465878052","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":42948,"time":"2021-10-25T03:23:19.925Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"analytic_event_data\":833,\"custom_event_data\":83}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":42948,"time":"2021-10-25T03:23:19.951Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":42948,"time":"2021-10-25T03:23:20.952Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":43302,"time":"2021-10-25T03:27:04.878Z","msg":"Using New Relic for Node.js. Agent version: 8.5.0; Node version: v14.18.1."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":43302,"time":"2021-10-25T03:27:05.425Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":43302,"time":"2021-10-25T03:27:05.456Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":43302,"time":"2021-10-25T03:27:05.456Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":43302,"time":"2021-10-25T03:27:13.981Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":43302,"time":"2021-10-25T03:27:13.983Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID BcKqkEnRYiaGADJ_HlfQvmZhdiR8AAgBAAAnIQEAAKkmAgRXX4YkAwAFOC41LjAACUxha2Vqb3JnZQAcU2VydmljZV9CYWNrZW5kX0RvY2tlcl9TbWFsbA.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":43302,"time":"2021-10-25T03:27:13.983Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/3309342/applications/1465878052","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":43302,"time":"2021-10-25T03:27:13.993Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"analytic_event_data\":833,\"custom_event_data\":83}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":43302,"time":"2021-10-25T03:27:14.010Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":43302,"time":"2021-10-25T03:27:15.011Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":46506,"time":"2021-10-25T03:53:30.083Z","msg":"Using New Relic for Node.js. Agent version: 8.5.0; Node version: v14.18.1."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":46506,"time":"2021-10-25T03:53:30.525Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":46506,"time":"2021-10-25T03:53:30.542Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":46506,"time":"2021-10-25T03:53:30.543Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":46506,"time":"2021-10-25T03:53:41.301Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":46506,"time":"2021-10-25T03:53:41.302Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID BfYzyvbHO-K3ADJ_HlfQvmZhdiqUAAgBAAAnIQEAALWqAgRXX4YkAwAFOC41LjAACUxha2Vqb3JnZQAcU2VydmljZV9CYWNrZW5kX0RvY2tlcl9TbWFsbA.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":46506,"time":"2021-10-25T03:53:41.303Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/3309342/applications/1465878052","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":46506,"time":"2021-10-25T03:53:41.309Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"analytic_event_data\":833,\"custom_event_data\":83}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":46506,"time":"2021-10-25T03:53:41.327Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":46506,"time":"2021-10-25T03:53:42.328Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":3587,"time":"2021-10-25T05:37:36.275Z","msg":"Using New Relic for Node.js. Agent version: 8.5.0; Node version: v14.18.1."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":3587,"time":"2021-10-25T05:37:37.328Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":3587,"time":"2021-10-25T05:37:37.462Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":3587,"time":"2021-10-25T05:37:37.462Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":3587,"time":"2021-10-25T05:37:47.587Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":3587,"time":"2021-10-25T05:37:47.590Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID BSVnt7nffT0wADJ_HlfQvmZhdkL0AAgBAAAnIQEAAA4DAgRXX4YkAwAFOC41LjAACUxha2Vqb3JnZQAcU2VydmljZV9CYWNrZW5kX0RvY2tlcl9TbWFsbA.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":3587,"time":"2021-10-25T05:37:47.591Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/3309342/applications/1465878052","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":3587,"time":"2021-10-25T05:37:47.594Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"analytic_event_data\":833,\"custom_event_data\":83}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":3587,"time":"2021-10-25T05:37:47.601Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":3587,"time":"2021-10-25T05:37:48.603Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":3763,"time":"2021-10-25T05:39:17.600Z","msg":"Using New Relic for Node.js. Agent version: 8.5.0; Node version: v14.18.1."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":3763,"time":"2021-10-25T05:39:17.892Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":3763,"time":"2021-10-25T05:39:17.905Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":3763,"time":"2021-10-25T05:39:17.905Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":3908,"time":"2021-10-25T05:39:54.847Z","msg":"Using New Relic for Node.js. Agent version: 8.5.0; Node version: v14.18.1."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":3908,"time":"2021-10-25T05:39:55.121Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":3908,"time":"2021-10-25T05:39:55.133Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":3908,"time":"2021-10-25T05:39:55.133Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":4712,"time":"2021-10-25T05:42:50.070Z","msg":"Using New Relic for Node.js. Agent version: 8.5.0; Node version: v14.18.1."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":4712,"time":"2021-10-25T05:42:50.358Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":4712,"time":"2021-10-25T05:42:50.375Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":4712,"time":"2021-10-25T05:42:50.375Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":4972,"time":"2021-10-25T05:47:11.982Z","msg":"Using New Relic for Node.js. Agent version: 8.5.0; Node version: v14.18.1."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":4972,"time":"2021-10-25T05:47:12.270Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":4972,"time":"2021-10-25T05:47:12.282Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":4972,"time":"2021-10-25T05:47:12.282Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":4972,"time":"2021-10-25T05:47:17.798Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":4972,"time":"2021-10-25T05:47:17.802Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID BYVlH1TY4glzADJ_HlfQvmZhdkVMAAgBAAAnIQEAABNsAgRXX4YkAwAFOC41LjAACUxha2Vqb3JnZQAcU2VydmljZV9CYWNrZW5kX0RvY2tlcl9TbWFsbA.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":4972,"time":"2021-10-25T05:47:17.802Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/3309342/applications/1465878052","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":4972,"time":"2021-10-25T05:47:17.807Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"analytic_event_data\":833,\"custom_event_data\":83}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":4972,"time":"2021-10-25T05:47:17.818Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Lakejorge","pid":4972,"time":"2021-10-25T05:47:18.819Z","msg":"Starting initial 1000ms harvest."}
